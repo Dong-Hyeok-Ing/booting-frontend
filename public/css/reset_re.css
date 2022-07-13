@@ -1,0 +1,235 @@
+@charset "UTF-8";
+* {-webkit-print-color-adjust: exact !important;  color-adjust: exact !important;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    color:#000;
+    scroll-behavior: smooth;
+    word-wrap: break-word;
+    word-break:keep-all;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+
+img{max-width:100%;}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+     font-size:18px;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+    overflow-x: hidden;
+    width:100%;
+    height:100%;
+    font-family: 'NanumSquare' ,Apple SD Gothic Neo, 'Malgun Gothic',"맑은고딕", 'dotum',"돋움",sans-serif;
+}
+
+body:lang(cn) {
+  font-family: 'NotoSansSC', sans-serif;
+}
+body:lang(en) {
+  font-family: 'Proxima' , sans-serif;
+}
+
+*:focus{
+    outline:2px dashed #CC1424!important;
+    z-index: 500;
+}
+
+.slick-slide:focus{
+  outline-offset: -2px;
+}
+button{
+    border:none;
+    box-shadow:none;
+    margin: 0;
+    padding:0;
+    background:transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color:#242424;
+    outline:none;
+    font-family:'NanumSquare' ,Apple SD Gothic Neo, 'Malgun Gothic',"맑은고딕", 'dotum',"돋움",sans-serif;
+    border-radius:0;
+    font-size:100%;
+}
+
+button:lang(cn) {
+  font-family: 'NotoSansSC', sans-serif;
+}
+button:lang(en) {
+  font-family: 'Proxima' , sans-serif;
+}
+
+
+button:focus{
+    outline:auto;
+}
+
+li{list-style:none; transform:skew(-0.03deg);}
+a{text-decoration:none;}
+
+
+@media (min-width:768px) {
+  ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+      border-radius: 3.5px;
+      width: 6px;
+      background-color: #b5b5b5;
+  }
+  ::-webkit-scrollbar-track {
+      background: #212121;
+      width: 10px;
+  }
+}
+::-moz-selection {
+  background: #cc1424;
+  color: #fff;
+ }
+
+
+::selection {
+  background: #cc1424;
+  color: #fff;
+}
+
+
+
+input{
+    -webkit-appearance : none;
+    -moz-appearance:none;
+    appearance:none;
+    outline:none;
+    border:none;
+    box-sizing:border-box;
+    font-family: 'NanumSquare';
+    border-radius:0;
+}
+
+input:lang(cn) {
+  font-family: 'NotoSansSC', sans-serif;
+}
+input:lang(en) {
+  font-family: 'Proxima' , sans-serif;
+}
+
+
+input:focus{
+    outline:none;
+}
+
+input:: -ms-clear { display:none;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-out-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance:none;
+}
+input[type=number]:: -webkit-outer-spin-button,
+input[type=number]:: -webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -mox-appearance: none;
+    appearance: none;
+}
+
+input[type=password] {font-family:'Malgun gothic', dotum, sans-serif;}
+
+input[type=password]:lang(cn) {
+  font-family: 'NotoSansSC', sans-serif;
+}
+input[type=password]:lang(en) {
+  font-family: 'Proxima' , sans-serif;
+}
+
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=checkbox]{
+    /* clip:rect(0,0,0,0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px; */
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: -3px;
+    top: 1px;
+}
+
+input[type=radio] {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: -6px;
+  top: 1px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance:none;
+    border:none;
+    border-radius:0;
+    font-family:'NanumSquare' ,Apple SD Gothic Neo, 'Malgun Gothic',"맑은고딕", 'dotum',"돋움",sans-serif;
+    transform:skew(-0.03deg);
+}
+
+select:lang(cn) {
+  font-family: 'NotoSansSC', sans-serif;
+}
+select:lang(en) {
+  font-family: 'Proxima' , sans-serif;
+}
+
+select:: -ms-expand { display:none; }
+
+
+@media (max-width:768px) {
+    html{
+        font-size:16px;
+    }
+
+    /* *{
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    ::-webkit-scrollbar {
+       display:none;
+    } */
+
+
+}
