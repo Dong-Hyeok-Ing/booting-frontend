@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+=======================================docker==============================================
+### docker build
+docker build -t booting-frontend .
+
+### docker run
+docker run -it -p 8080:80 --rm --name booting-frontend booting-frontend
